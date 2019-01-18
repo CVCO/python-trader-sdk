@@ -40,6 +40,21 @@ Bincentive Trader Client
 
 <a name="new_BincentiveClient_new"></a>
 
+<a name="BincentiveClient+get_strategy_list"></a>
+
+### bincentiveClient.get_strategy_list(timeout=None)
+Gets the list of strategies
+
+**Kind**: instance method of [<code>BincentiveClient</code>](#BincentiveClient)  
+
+
+<a name="BincentiveClient+get_exchange_list"></a>
+
+### bincentiveClient.get_exchange_list(timeout=None)
+Gets the list of exchanges 
+
+**Kind**: instance method of [<code>BincentiveClient</code>](#BincentiveClient) 
+
 <a name="BincentiveClient+add_market_order"></a>
 
 ### bincentiveClient.add_market_order(strategy_id, exchange_id, base_currency, quote_currency, side, amount, leverage=None, timeout=None)
@@ -72,19 +87,8 @@ Gets the historical data of all transactions
 | end_time | <code>string</code> | 
 | account_type | <code>string</code> | 
 
-<a name="BincentiveClient+get_strategy_list"></a>
 
-### bincentiveClient.get_strategy_list(timeout=None)
-Gets the list of strategies
-
-**Kind**: instance method of [<code>BincentiveClient</code>](#BincentiveClient)  
  
-<a name="BincentiveClient+get_exchange_list"></a>
-
-### bincentiveClient.get_exchange_list(timeout=None)
-Gets the list of exchanges 
-
-**Kind**: instance method of [<code>BincentiveClient</code>](#BincentiveClient)  
 <a name="BincentiveClient+add_api_key"></a>
 
 ### bincentiveClient.add_api_key(api_key, api_secret_key, exchange_id, timeout=None)
@@ -99,6 +103,13 @@ Adds all the keys of each transaction
 | exchange_id | <code>number</code> | 
 
 
+<a name="BincentiveClient+get_api_key_list"></a>
+
+### bincentiveClient.get_api_key_list(timeout=None)
+Gets API key list
+
+**Kind**: instance method of [<code>BincentiveClient</code>](#BincentiveClient)  
+
 <a name="BincentiveClient+delete_api_key"></a>
 
 ### bincentiveClient.delete_api_key(exchange_id, timeout=None)
@@ -110,11 +121,6 @@ Deletes all the keys of a transaction
 | --- | --- |
 | exchangeId | <code>number</code> | 
 
-<a name="BincentiveClient+get_api_key_list"></a>
 
-### bincentiveClient.get_api_key_list(timeout=None)
-Gets API key list
-
-**Kind**: instance method of [<code>BincentiveClient</code>](#BincentiveClient)  
 
 
