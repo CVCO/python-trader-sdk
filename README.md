@@ -16,7 +16,7 @@ client = TraderClient(email, password, False)
 
 ```
 
-Available clients methods are listed in the Bincentive Client Methods section.
+Available client methods are listed in the Bincentive Client Methods section.
 Each method has a `timeout` parameter that will cause a `bincentive_trader.exceptions.Timeout`
 exception if no response is received in the specified seconds.
 
