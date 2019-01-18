@@ -16,15 +16,7 @@ client = TraderClient(email, password, False)
 
 ```
 
-Available clients methods are:
-- get_strategy_list(timeout=None)
-- get_exchange_list(timeout=None)
-- add_market_order(strategy_id, exchange_id, base_currency, quote_currency, side, amount, leverage=None, timeout=None)
-- get_history_list(strategy_id, begin_time, end_time, account_type='real', timeout=None)
-- add_api_key(api_key, api_secret_key, exchange_id, timeout=None)
-- get_api_key_list(timeout=None)
-- delete_api_key(exchange_id, timeout=None)
-
+Available clients methods are listed in the Bincentive Client Methods section.
 Each method has a `timeout` parameter that will cause a `bincentive_trader.exceptions.Timeout`
 exception if no response is received in the specified seconds.
 
@@ -37,13 +29,14 @@ Bincentive Trader Client
 
 * [BincentiveClient](#BincentiveClient)
     
-    * [.add_market_order(strategy_id, exchange_id, base_currency, quote_currency, side, amount, leverage=None, timeout=None)](#BincentiveClient+add_market_order)
-    * [.get_history_list(strategy_id, begin_time, end_time, account_type='real', timeout=None)](#BincentiveClient+get_history_list)
     * [.get_strategy_list(timeout=None)](#BincentiveClient+get_strategy_list)
     * [.get_exchange_list(timeout=None)](#BincentiveClient+get_exchange_list)
+    * [.add_market_order(strategy_id, exchange_id, base_currency, quote_currency, side, amount, leverage=None, timeout=None)](#BincentiveClient+add_market_order)
+    * [.get_history_list(strategy_id, begin_time, end_time, account_type='real', timeout=None)](#BincentiveClient+get_history_list)
     * [.add_api_key(api_key, api_secret_key, exchange_id, timeout=None)](#BincentiveClient+add_api_key)
-    * [.delete_api_key(exchange_id, timeout=None)](#BincentiveClient+delete_api_key)
     * [.get_api_key_list(timeout=None)](#BincentiveClient+get_api_key_list)
+    * [.delete_api_key(exchange_id, timeout=None)](#BincentiveClient+delete_api_key)
+  
 
 <a name="new_BincentiveClient_new"></a>
 
@@ -56,14 +49,14 @@ Adds an order for a specific strategy
 
 | Param | Type |
 | --- | --- |
-| strategyId | <code>number</code> | 
-| exchangeId | <code>number</code> | 
-| baseCurrency | <code>string</code> | 
-| quoteCurrency | <code>string</code> | 
-| orderType | <code>string</code> | 
-| orderSide | <code>string</code> | 
-| unit | <code>number</code> | 
-| limitPrice | <code>number</code> | 
+| strategy_id | <code>number</code> | 
+| exchange_id | <code>number</code> | 
+| base_currency | <code>string</code> | 
+| quote_currency | <code>string</code> | 
+| side | <code>string</code> | 
+| amount | <code>number</code> | 
+| leverage | <code>number</code> |
+
 
 <a name="BincentiveClient+get_history_list"></a>
 
@@ -72,6 +65,12 @@ Gets the historical data of all transactions
 
 **Kind**: instance method of [<code>BincentiveClient</code>](#BincentiveClient)  
 
+| Param | Type |
+| --- | --- |
+| strategy_id | <code>number</code> | 
+| begin_time | <code>string</code> | 
+| end_time | <code>string</code> | 
+| account_type | <code>string</code> | 
 
 <a name="BincentiveClient+get_strategy_list"></a>
 
@@ -95,11 +94,10 @@ Adds all the keys of each transaction
 
 | Param | Type |
 | --- | --- |
-| apiKey | <code>string</code> | 
-| secretKey | <code>string</code> | 
-| exchangeId | <code>number</code> | 
-| apiNickname | <code>string</code> | 
-| fixApiAssign | <code>boolean</code> | 
+| api_key | <code>string</code> | 
+| api_secret_key | <code>string</code> | 
+| exchange_id | <code>number</code> | 
+
 
 <a name="BincentiveClient+delete_api_key"></a>
 
