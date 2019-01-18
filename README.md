@@ -39,7 +39,7 @@ Bincentive Trader Client
     
     * [.addOrder(strategyId, exchangeId, baseCurrency, quoteCurrency, orderType, orderSide, unit, limitPrice)](#BincentiveClient+addOrder)
     * [.getHistoryList()](#BincentiveClient+getHistoryList)
-    * [.getStrategyList()](#BincentiveClient+getStrategyList)
+    * [.get_strategy_list(timeout=None)](#BincentiveClient+get_strategy_list)
     * [.getExchangeList()](#BincentiveClient+getExchangeList)
     * [.addApiKey(apiKey, secretKey, exchangeId, apiNickname, fixApiAssign)](#BincentiveClient+addApiKey)
     * [.deleteApiKey(exchangeId)](#BincentiveClient+deleteApiKey)
@@ -73,9 +73,9 @@ Gets the historical data of all transactions
 **Kind**: instance method of [<code>BincentiveClient</code>](#BincentiveClient)  
 
 
-<a name="BincentiveClient+getStrategyList"></a>
+<a name="BincentiveClient+get_strategy_list"></a>
 
-### bincentiveClient.getStrategyList()
+### bincentiveClient.get_strategy_list(timeout=None)
 Gets the list of strategies
 
 **Kind**: instance method of [<code>BincentiveClient</code>](#BincentiveClient)  
