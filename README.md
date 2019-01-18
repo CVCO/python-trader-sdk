@@ -1,6 +1,6 @@
 # Setup
 
-1. Clone this project from git repo.
+1. Clone this project from the git repo.
 2. At project root, install this package by running  
    `$ pip install .`
 
@@ -26,6 +26,6 @@ Available clients methods are:
 - delete_api_key(exchange_id, timeout=None)
 
 Each method has a `timeout` parameter that will cause a `bincentive_trader.exceptions.Timeout`
-exception if no response is received in specified seconds.
+exception if no response is received in the specified seconds.
 
 
